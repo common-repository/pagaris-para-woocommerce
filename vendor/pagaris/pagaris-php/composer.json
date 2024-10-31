@@ -1,0 +1,32 @@
+{
+  "name": "pagaris/pagaris-php",
+  "description": "PHP library for the Pagaris API",
+  "version": "1.0.4",
+  "keywords": ["pagaris", "api", "library", "client", "sdk"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pagaris",
+      "homepage": "https://pagaris.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "guzzlehttp/guzzle": "~6.3.3"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/morozov/php-vcr"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "~6.1",
+    "php-vcr/php-vcr": "dev-issues/289 as 1.4.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pagaris\\": "lib/"
+    }
+  }
+}

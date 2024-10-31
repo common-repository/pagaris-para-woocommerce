@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests/TestCase.php" colors="true" verbase="true" stopOnFailute="false">
+
+  <testsuites>
+    <testsuite name="Pagaris PHP Test Suite">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

@@ -1,0 +1,33 @@
+
+-
+    request:
+        method: GET
+        url: 'http://localhost:3000/api/v1/orders/d2eaabec-2aa7-4c8f-bdcc-1c26c9a1c4a5'
+        headers:
+            Host: 'localhost:3000'
+            Expect: null
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.3.3 curl/7.66.0 PHP/7.3.9'
+            Authorization: 'Pagaris 3f482d1f-ef7a-487b-a1f2-22fd69595159:1570745011:5bf86329013ae992f0a53670d5c4eaf63881d7481aa1f9201fd5f6435fe3977a'
+            Content-Type: application/json
+            Accept: null
+        body: '{"order":{"amount":null,"metadata":null,"products":null,"redirect_url":null}}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            X-Frame-Options: SAMEORIGIN
+            X-XSS-Protection: '1; mode=block'
+            X-Content-Type-Options: nosniff
+            X-Download-Options: noopen
+            X-Permitted-Cross-Domain-Policies: none
+            Referrer-Policy: strict-origin-when-cross-origin
+            Content-Type: 'application/json; charset=utf-8'
+            ETag: 'W/"08e8cabd496358360ac1a8a4302ee217"'
+            Cache-Control: 'max-age=0, private, must-revalidate'
+            X-Request-Id: e30caafc-d33d-49e8-9e65-331ecd185868
+            X-Runtime: '0.021392'
+            Transfer-Encoding: chunked
+        body: '{"order":{"id":"d2eaabec-2aa7-4c8f-bdcc-1c26c9a1c4a5","amount":"12345.0","status":"created","metadata":null,"products":null,"redirect_url":null,"created_at":"2019-09-24T15:29:14.700-05:00","updated_at":"2019-09-24T15:29:14.700-05:00","url":"http://localhost:3000/orders/d2eaabec-2aa7-4c8f-bdcc-1c26c9a1c4a5/lr"}}'

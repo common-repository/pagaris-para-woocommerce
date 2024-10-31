@@ -1,0 +1,64 @@
+
+-
+    request:
+        method: GET
+        url: 'http://localhost:3000/api/v1/orders/e44c8acc-3750-439a-ace0-85f70c7dc4af'
+        headers:
+            Host: 'localhost:3000'
+            Expect: null
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.3.3 curl/7.66.0 PHP/7.3.9'
+            Authorization: 'Pagaris 3f482d1f-ef7a-487b-a1f2-22fd69595159:1570746765:7ca14e80767a3f76d02087173c423335c59ef8578c761db9b6b13281dd859062'
+            Content-Type: application/json
+            Accept: null
+        body: '{"order":{"amount":null,"metadata":null,"products":null,"redirect_url":null}}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            X-Frame-Options: SAMEORIGIN
+            X-XSS-Protection: '1; mode=block'
+            X-Content-Type-Options: nosniff
+            X-Download-Options: noopen
+            X-Permitted-Cross-Domain-Policies: none
+            Referrer-Policy: strict-origin-when-cross-origin
+            Content-Type: 'application/json; charset=utf-8'
+            ETag: 'W/"5caab1ded4d3b15b37edafa097fe79ce"'
+            Cache-Control: 'max-age=0, private, must-revalidate'
+            X-Request-Id: 7a7ba1f4-7b79-4d08-a31a-3b2cc08b251e
+            X-Runtime: '0.015531'
+            Transfer-Encoding: chunked
+        body: '{"order":{"id":"e44c8acc-3750-439a-ace0-85f70c7dc4af","amount":"5329.12","status":"approved","metadata":{"some_id":123,"something":"else"},"products":[{"name":"a","quantity":1,"unit_price":4500}],"redirect_url":null,"created_at":"2019-09-27T14:51:38.213-05:00","updated_at":"2019-09-27T14:53:39.218-05:00","url":"http://localhost:3000/orders/e44c8acc-3750-439a-ace0-85f70c7dc4af/lr"}}'
+-
+    request:
+        method: PUT
+        url: 'http://localhost:3000/api/v1/orders/e44c8acc-3750-439a-ace0-85f70c7dc4af/confirm'
+        headers:
+            Host: 'localhost:3000'
+            Content-Length: '0'
+            Accept-Encoding: null
+            User-Agent: 'GuzzleHttp/6.3.3 curl/7.66.0 PHP/7.3.9'
+            Authorization: 'Pagaris 3f482d1f-ef7a-487b-a1f2-22fd69595159:1570746765:0bca557ff8749003eeb166b5ade8cd259adf27b59ced16d812316bdb122e2ff0'
+            Content-Type: application/json
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            X-Frame-Options: SAMEORIGIN
+            X-XSS-Protection: '1; mode=block'
+            X-Content-Type-Options: nosniff
+            X-Download-Options: noopen
+            X-Permitted-Cross-Domain-Policies: none
+            Referrer-Policy: strict-origin-when-cross-origin
+            Content-Type: 'application/json; charset=utf-8'
+            ETag: 'W/"465cfeab5676b07ddd97ef44aa9fa587"'
+            Cache-Control: 'max-age=0, private, must-revalidate'
+            X-Request-Id: b0af1e97-6f89-4347-b3b0-9ebb335f8991
+            X-Runtime: '0.035438'
+            Transfer-Encoding: chunked
+        body: '{"order":{"id":"e44c8acc-3750-439a-ace0-85f70c7dc4af","amount":"5329.12","status":"confirmed","metadata":{"some_id":123,"something":"else"},"products":[{"name":"a","quantity":1,"unit_price":4500}],"redirect_url":null,"created_at":"2019-09-27T14:51:38.213-05:00","updated_at":"2019-10-10T17:32:45.226-05:00","url":"http://localhost:3000/orders/e44c8acc-3750-439a-ace0-85f70c7dc4af/lr"}}'
